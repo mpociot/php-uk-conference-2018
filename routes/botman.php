@@ -72,7 +72,7 @@ $botman->hears('order.pizza', function($bot) {
         $bot->reply('Topping: '.$topping);
     }
     
-})->middleware($rasa);
+})->middleware($middleware);
 
 $botman->fallback(function($bot) {
     $bot->reply('I have no idea what you are talking about!');

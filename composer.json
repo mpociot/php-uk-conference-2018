@@ -6,14 +6,14 @@
     "type": "project",
     "require": {
         "php": ">=7.0",
-        "botman/driver-web": "dev-master",
+        "botman/driver-web": "~1.0",
+        "botman/tinker": "~1.0",
         "botman/studio-addons": "~1.0",
+        "guzzlehttp/guzzle": "~6.0",
         "clue/stdio-react": "^1.0",
         "laravel/framework": "5.4.*",
         "laravel/tinker": "~1.0",
-        "mpociot/botman": "2.0.x-dev",
-        "mpociot/botman-tinker": "~2.0",
-        "mpociot/slack-client": "^0.3.0"
+        "botman/botman": "~2.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
@@ -54,7 +54,10 @@
     "config": {
         "preferred-install": "dist",
         "sort-packages": true,
-        "optimize-autoloader": true
+        "optimize-autoloader": true,
+        "platform": {
+            "php": "7.0.0"
+        }
     },
     "minimum-stability": "dev",
     "prefer-stable": true
