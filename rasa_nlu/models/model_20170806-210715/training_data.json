@@ -1,0 +1,281 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "text": "i want a small pizza with tomatos",
+        "intent": "order.pizza",
+        "entities": [
+          {
+            "start": 9,
+            "end": 14,
+            "value": "small",
+            "entity": "size"
+          },
+          {
+            "start": 26,
+            "end": 33,
+            "value": "tomatos",
+            "entity": "topping"
+          }
+        ]
+      },
+      {
+        "text": "i want a pizza with bbq souce",
+        "intent": "order.pizza",
+        "entities": [
+          {
+            "start": 20,
+            "end": 23,
+            "value": "bbq",
+            "entity": "sauce"
+          }
+        ]
+      },
+      {
+        "text": "I want a pizza.",
+        "intent": "order.pizza",
+        "entities": []
+      },
+      {
+        "text": "pizza delivery",
+        "intent": "order.pizza",
+        "entities": []
+      },
+      {
+        "text": "deliver four cheese to 438 Tennyson Ave",
+        "intent": "order.pizza",
+        "entities": [
+          {
+            "start": 8,
+            "end": 19,
+            "value": "four cheese",
+            "entity": "type"
+          },
+          {
+            "start": 23,
+            "end": 39,
+            "value": "438 Tennyson Ave",
+            "entity": "address"
+          }
+        ]
+      },
+      {
+        "text": "i want margharita now",
+        "intent": "order.pizza",
+        "entities": [
+          {
+            "start": 7,
+            "end": 17,
+            "value": "margharita",
+            "entity": "type"
+          }
+        ]
+      },
+      {
+        "text": "margherita",
+        "intent": "order.pizza",
+        "entities": [
+          {
+            "start": 0,
+            "end": 10,
+            "value": "margherita",
+            "entity": "type"
+          }
+        ]
+      },
+      {
+        "text": "deliver a large margherita to me",
+        "intent": "order.pizza",
+        "entities": [
+          {
+            "start": 10,
+            "end": 15,
+            "value": "large",
+            "entity": "size"
+          },
+          {
+            "start": 16,
+            "end": 26,
+            "value": "margherita",
+            "entity": "type"
+          }
+        ]
+      },
+      {
+        "text": "i want to order pizza capricciosa",
+        "intent": "order.pizza",
+        "entities": [
+          {
+            "start": 22,
+            "end": 33,
+            "value": "capricciosa",
+            "entity": "type"
+          }
+        ]
+      },
+      {
+        "text": "I love capricciosa pizza",
+        "intent": "order.pizza",
+        "entities": [
+          {
+            "start": 7,
+            "end": 18,
+            "value": "capricciosa",
+            "entity": "type"
+          }
+        ]
+      },
+      {
+        "text": "I'd like four cheese pizza",
+        "intent": "order.pizza",
+        "entities": [
+          {
+            "start": 9,
+            "end": 20,
+            "value": "four cheese",
+            "entity": "type"
+          }
+        ]
+      },
+      {
+        "text": "can you make me small margherita and deliver it to 438 Tennyson Ave",
+        "intent": "order.pizza",
+        "entities": [
+          {
+            "start": 16,
+            "end": 21,
+            "value": "small",
+            "entity": "size"
+          },
+          {
+            "start": 22,
+            "end": 32,
+            "value": "margherita",
+            "entity": "type"
+          },
+          {
+            "start": 51,
+            "end": 67,
+            "value": "438 Tennyson Ave",
+            "entity": "address"
+          }
+        ]
+      },
+      {
+        "text": "make me margherita with chicken and additional cheese",
+        "intent": "order.pizza",
+        "entities": [
+          {
+            "start": 8,
+            "end": 18,
+            "value": "margherita",
+            "entity": "type"
+          },
+          {
+            "start": 24,
+            "end": 31,
+            "value": "chicken",
+            "entity": "topping"
+          },
+          {
+            "start": 47,
+            "end": 53,
+            "value": "cheese",
+            "entity": "topping"
+          }
+        ]
+      },
+      {
+        "text": "capricciosa pizza on thick crust",
+        "intent": "order.pizza",
+        "entities": [
+          {
+            "start": 0,
+            "end": 11,
+            "value": "capricciosa",
+            "entity": "type"
+          },
+          {
+            "start": 21,
+            "end": 26,
+            "value": "thick",
+            "entity": "crust"
+          }
+        ]
+      },
+      {
+        "text": "i want margherita with thin crust",
+        "intent": "order.pizza",
+        "entities": [
+          {
+            "start": 7,
+            "end": 17,
+            "value": "margherita",
+            "entity": "type"
+          },
+          {
+            "start": 23,
+            "end": 27,
+            "value": "thin",
+            "entity": "crust"
+          }
+        ]
+      },
+      {
+        "text": "i want small four cheese pizza delivered to me in an hour",
+        "intent": "order.pizza",
+        "entities": [
+          {
+            "start": 7,
+            "end": 12,
+            "value": "small",
+            "entity": "size"
+          },
+          {
+            "start": 13,
+            "end": 24,
+            "value": "four cheese",
+            "entity": "type"
+          },
+          {
+            "start": 47,
+            "end": 57,
+            "value": "in an hour",
+            "entity": "time"
+          }
+        ]
+      },
+      {
+        "text": "I want a large margharita with extra cheese and onions",
+        "intent": "order.pizza",
+        "entities": [
+          {
+            "start": 9,
+            "end": 14,
+            "value": "large",
+            "entity": "size"
+          },
+          {
+            "start": 15,
+            "end": 25,
+            "value": "margharita",
+            "entity": "type"
+          },
+          {
+            "start": 31,
+            "end": 43,
+            "value": "extra cheese",
+            "entity": "topping"
+          },
+          {
+            "start": 48,
+            "end": 54,
+            "value": "onions",
+            "entity": "topping"
+          }
+        ]
+      }
+    ],
+    "regex_features": []
+  }
+}

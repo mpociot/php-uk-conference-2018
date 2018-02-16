@@ -1,0 +1,7 @@
+{
+  "pipeline": "mitie",
+  "mitie_file": "./data/total_word_feature_extractor.dat",
+  "path" : "./models",
+  "data" : "./data/botman",
+  "server_model_dirs": "/Users/marcel/Talks/laracon/rasa_nlu/models/model_20170806-210715"
+}
