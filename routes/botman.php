@@ -57,19 +57,21 @@ $middleware = BotMan\BotMan\Middleware\ApiAi::create(env('API_AI_TOKEN'))->liste
 $botman->middleware->received($middleware);
 
 $botman->hears('order.pizza', function($bot) {
-    $extras = collect($bot->getMessage()->getExtras('apiEntities'));
-    $types = implode($extras->get('type', collect())->pluck('value')->toArray(), ' ');
-    $size = implode($extras->get('size', collect())->pluck('value')->toArray(), ' ');
-    $topping = implode($extras->get('topping', collect())->pluck('value')->toArray(), ', ');
-
-    if ($types != '') {
-        $bot->reply('Type: '.$types);
-    }
-    if ($size != '') {
-        $bot->reply('Size: '.$size);    
-    }
+    $extras = collect($bot->getMessage()->getExtras('apiParameters'));
+    
+    $types = $extras->get('type');
+    $size = $extras->get('size');
+    $topping = implode($extras->get('topping', []), ', ');
     if ($topping != '') {
-        $bot->reply('Topping: '.$topping);
+        if ($types != '') {
+            $bot->reply('Type: '.$types);
+        }
+        if ($size != '') {
+            $bot->reply('Size: '.$size);    
+        }
+        if ($topping != '') {
+            $bot->reply('Topping: '.$topping);
+        }
     }
     
 })->middleware($middleware);
